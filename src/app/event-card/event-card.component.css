@@ -21,8 +21,8 @@ body {
     margin: auto;
     border: 1px solid #ffffff22;
 
-    background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
-    box-shadow: 0 7px 20px 5px #00000088;
+    background: linear-gradient(0deg, rgba(0, 123, 255, 1) 0%, rgba(173, 216, 230, 0.5) 100%);
+    box-shadow: 0 7px 20px 5px rgba(0, 123, 255, 1);
     border-radius: .7rem;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
@@ -31,13 +31,17 @@ body {
     hr{
       width: 100%;
       border: none;
-      border-bottom: 1px solid #88888855;
+      border-bottom: 1px;
       margin-top: 0;
     }
 
     h2 {
         margin-bottom: 0; /* Adjust spacing as needed */
       }
+
+    p {
+    color: #eee;
+    }
 
     ins{
       text-decoration: none;
@@ -55,7 +59,7 @@ body {
       }
       .description{
         margin-top: 0;
-        color: #a89ec9;
+        color: #eee;
       }
       .tokenInfo{
         display: flex;
@@ -64,7 +68,7 @@ body {
         .price{
           display: flex;
           align-items: center;
-          color: #ee83e5;
+          color: #eee;
           font-weight: 700;
           ins{
             margin-left: -.3rem;
@@ -94,7 +98,7 @@ body {
         .wrapper{
           display: flex;
           align-items: center;
-          border: 1px solid #ffffff22;
+          border: 1px solid hsl(232, 100%, 49%);
           padding: .3rem;
           margin: 0;
           margin-right: .5rem;
