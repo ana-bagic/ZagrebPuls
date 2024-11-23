@@ -1,0 +1,17 @@
+<div *ngIf="loading">Loading events...</div>
+<div *ngIf="error">{{ error }}</div>
+
+<div *ngIf="events && events.length; else noEvents">
+  <h2>Upcoming Events</h2>
+  <ul>
+    <li *ngFor="let event of events; let index=index; let odd=odd; let even=even;">
+      <h3>{{ event.fields["puni naziv"] }}</h3>
+      <p>{{ event.fields.opis }}</p>
+      <a [href]="event.fields['Poveznica na događaj']" target="_blank">More Info</a>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noEvents>
+  <p>No events available.</p>
+</ng-template>
